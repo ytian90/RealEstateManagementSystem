@@ -14,9 +14,9 @@ Environment: Microsoft Visual Studio Community 2013
 
 ![Alt text](https://github.com/ytian90/RealEstateManagementSystem/blob/master/fig1.JPG?raw=true "Optional Account")
 Fig1. The Log In Interface
-![Alt text](https://github.com/ytian90/RealEstateManagementSystem/blob/master/fig1.JPG?raw=true "Optional Agent")
+![Alt text](https://github.com/ytian90/RealEstateManagementSystem/blob/master/fig2.JPG?raw=true "Optional Agent")
 Fig2. Agent Interface
-![Alt text](https://github.com/ytian90/RealEstateManagementSystem/blob/master/fig1.JPG?raw=true "Optional Customer")
+![Alt text](https://github.com/ytian90/RealEstateManagementSystem/blob/master/fig3.JPG?raw=true "Optional Customer")
 Fig3. Customer Interface
 
 Copyright (c) 2015 Yu Tian. All rights reserved.
