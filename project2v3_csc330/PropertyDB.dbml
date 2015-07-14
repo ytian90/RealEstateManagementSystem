@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PropertyDB" Class="PropertyDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\PropertyDB.mdf;Integrated Security=True" SettingsObjectName="project2v3_csc330.Properties.Settings" SettingsPropertyName="PropertyDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AgentTable" Member="AgentTables">
+    <Type Name="AgentTable">
+      <Column Name="Agent_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Agent_FirstName" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Agent_LastName" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Agent_Phone" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Agent_Email" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Association Name="AgentTable_PropertyTable" Member="PropertyTables" ThisKey="Agent_Id" OtherKey="Agent_Id" Type="PropertyTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustomerTable" Member="CustomerTables">
+    <Type Name="CustomerTable">
+      <Column Name="Customer_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Customer_FirstName" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Customer_LastName" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Customer_Phone" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Customer_Email" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Association Name="CustomerTable_OfferTable" Member="OfferTables" ThisKey="Customer_Id" OtherKey="Customer_Id" Type="OfferTable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OfferTable" Member="OfferTables">
+    <Type Name="OfferTable">
+      <Column Name="Offer_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Property_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Customer_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Offer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CustomerTable_OfferTable" Member="CustomerTable" ThisKey="Customer_Id" OtherKey="Customer_Id" Type="CustomerTable" IsForeignKey="true" />
+      <Association Name="PropertyTable_OfferTable" Member="PropertyTable" ThisKey="Property_Id" OtherKey="Property_Id" Type="PropertyTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PropertyTable" Member="PropertyTables">
+    <Type Name="PropertyTable">
+      <Column Name="Property_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Property_Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Square" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Lot" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Style" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Property_Bedrooms" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Bathrooms" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Appliance" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Property_Garage" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Property_Basement" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Property_Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Property_Status" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Property_StreetAddress" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Property_City" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Property_State" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Property_Country" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Property_PostalCode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Owner_Name" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Owner_Phone" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Owner_StreetAddress" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Owner_City" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Owner_State" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Owner_Country" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Owner_PostalCode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Owner_Requests" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Agent_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="PropertyTable_OfferTable" Member="OfferTables" ThisKey="Property_Id" OtherKey="Property_Id" Type="OfferTable" />
+      <Association Name="AgentTable_PropertyTable" Member="AgentTable" ThisKey="Agent_Id" OtherKey="Agent_Id" Type="AgentTable" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

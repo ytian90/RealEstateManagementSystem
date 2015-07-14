@@ -1,0 +1,16 @@
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\bin\Debug\project2v3_csc330.exe.config
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\bin\Debug\PropertyDB.mdf
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\bin\Debug\PropertyDB_log.ldf
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\bin\Debug\project2v3_csc330.exe
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\bin\Debug\project2v3_csc330.pdb
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.MainForm.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.Properties.Resources.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.csproj.GenerateResource.Cache
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.exe
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.pdb
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.Agent.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.Customer.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.CreateAccount.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.Login.resources
+F:\Visual Studio 2013\Projects\project2v3_csc330\project2v3_csc330\obj\Debug\project2v3_csc330.Login1.resources
